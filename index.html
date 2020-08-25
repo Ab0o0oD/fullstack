@@ -52,7 +52,7 @@
         </ul>
         <!-- Logg in bottom Modal-->
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <a id="btn-logginn">
             <span class="fa fa-sign-in"></span> Login</a>
         </span>
       </div>
@@ -99,6 +99,97 @@
     </div>
   </div>
 
+
+  <!-- Reserve a tabel Modal-->
+  <div id="ReserveTable" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Reserve a Table </h4>
+          <!--Dismiss buttom-->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="guests" class="col-md-2 col-form-label"><strong>Number of Guests</strong>
+              </label>
+              <div class="col-md-10 mt-0">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="custom-control-label" for="inlineRadio1"><strong>1</strong></label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="custom-control-label" for="inlineRadio2"><strong>2</strong></label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3">
+                  <label class="custom-control-label" for="inlineRadio3"><strong>3</strong></label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                    value="option4">
+                  <label class="custom-control-label" for="inlineRadio4"><strong>4</strong></label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                    value="option5">
+                  <label class="custom-control-label" for="inlineRadio5"><strong>5</strong></label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
+                    value="option6">
+                  <label class="custom-control-label" for="inlineRadio6"><strong>6</strong> </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+
+              <label for="section" class="col-md-2 col-form-label"><strong>Section</strong></label>
+
+              <div class="btn-group btn-group-toggle" data-toggle="buttons" id="section">
+                <label class="btn btn-success active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                </label>
+
+              </div>
+
+
+
+            </div>
+
+            <div class="form-group row">
+              <label class="col-12 col-sm-2 col-form-label">Date and Time</label>
+              <div class="col-12 col-sm-4">
+                <input type="date" class="form-control" placeholder="Date">
+              </div>
+              <div class="col-12 col-sm-4">
+                <input type="time" class="form-control" placeholder="Time">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Reserve</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
   <header class="jumbotron">
     <div class="container">
       <div class="row row-header">
@@ -117,102 +208,13 @@
         <div class="col-12 col-sm-3 align-self-center">
           <!--  Modal-->
           <!-- Reserve a tabel Buttom-->
-          <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#ReserveTable"
-            data-placement="bottom" href="#reservetable">Reserve Table</a>
+          <a role="button" class="btn btn-block nav-link btn-warning" id="btnreserve" href="#reservetable">Reserve
+            Table</a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Reserve a tabel Modal-->
-  <div id="ReserveTable" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg" role="content">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Reserve a Table </h4>
-          <!--Dismiss buttom-->
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group row">
-              <label for="guests" class="col-md-2 col-form-label"><strong>Number of Guests</strong>
-              </label>
-              <div class="col-md-10 mt-0">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1">
-                  <label class="form-check-label" for="inlineRadio1"><strong>1</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
-                  <label class="form-check-label" for="inlineRadio2"><strong>2</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3">
-                  <label class="form-check-label" for="inlineRadio3"><strong>3</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                    value="option4">
-                  <label class="form-check-label" for="inlineRadio4"><strong>4</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
-                    value="option5">
-                  <label class="form-check-label" for="inlineRadio5"><strong>5</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
-                    value="option6">
-                  <label class="form-check-label" for="inlineRadio6"><strong>6</strong> </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-
-              <label for="section" class="col-md-2 col-form-label"><strong>Section</strong></label>
-
-              <div class="btn-group btn-group-toggle" data-toggle="buttons" id="section">
-                <label class="btn btn-outline-success active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
-                </label>
-                <label class="btn btn-outline-danger">
-                  <input type="radio" name="options" id="option2" autocomplete="off">Smoking
-                </label>
-
-              </div>
-
-
-
-            </div>
-
-            <div class="form-group row">
-              <label for="date" class="col-md-2 col-form-label"><strong>Date and Time</strong></label>
-              <div class="col-md-4" id="date">
-                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-              </div>
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="date" name="Time" placeholder="Time">
-              </div>
-
-            </div>
-            <div class="form-group row">
-              <div class="offset-md-2 col-md-10">
-                <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel</button>
-                <button type="submit" class="btn btn-primary">Reserve</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
 
 
@@ -470,30 +472,8 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 
-  <!-- activate the buttons "play" "pause" -->
-  <script>
-    $(document).ready(function () {
-      $("#mycarousel").carousel({ interval: 2000 });
-      $("#carouselButton").click(function () {
-        if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-          $("#mycarousel").carousel('pause');
-          $("#carouselButton").children("span").removeClass('fa-pause');
-          $("#carouselButton").children("span").addClass('fa-play');
-        }
-        else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-          $("#mycarousel").carousel('cycle');
-          $("#carouselButton").children("span").removeClass('fa-play');
-          $("#carouselButton").children("span").addClass('fa-pause');
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>
